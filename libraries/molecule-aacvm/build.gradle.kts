@@ -2,6 +2,8 @@ plugins {
   alias(libs.plugins.kotlinMultiplatform)
   alias(libs.plugins.androidLibrary)
   alias(libs.plugins.molecule)
+  alias(libs.plugins.nmcp)
+  `maven-publish`
 }
 
 version = property("VERSION_NAME") as String
@@ -45,5 +47,13 @@ android {
   compileOptions {
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8
+  }
+}
+
+nmcp {
+  publishAllPublications {
+    username = findProperty("MAVEN_CENTRAL_USERNAME") as String
+    password = findProperty("MAVEN_CENTRAL_PASSWORD") as String
+    publicationType = "USER_MANAGED"
   }
 }
