@@ -1,0 +1,23 @@
+root=true
+
+# noinspection EditorConfigKeyCorrectness
+[*.{kt,kts}]
+end_of_line=lf
+indent_size=2
+ij_continuation_indent_size=2
+max_line_length=120
+insert_final_newline=true
+
+ij_kotlin_allow_trailing_comma=true
+ij_kotlin_allow_trailing_comma_on_call_site=true
+ij_kotlin_packages_to_use_import_on_demand=unset
+
+no-wildcard-imports=true
+ij_kotlin_imports_layout=*
+
+[*.xml]
+indent_size=2
+
+[*.md]
+indent_size=2
+
