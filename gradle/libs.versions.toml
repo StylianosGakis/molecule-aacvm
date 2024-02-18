@@ -1,0 +1,16 @@
+[versions]
+
+compileSdk = "34"
+minSdk = "21"
+
+[libraries]
+
+androidx-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version = "2.7.0" }
+coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version = "1.8.0" }
+
+[plugins]
+
+androidLibrary = { id = "com.android.library", version = "8.2.2" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version = "1.9.22" }
+molecule = { id = "app.cash.molecule", version = "1.3.2" }
+
