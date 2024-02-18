@@ -11,6 +11,7 @@ coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version
 [plugins]
 
 androidLibrary = { id = "com.android.library", version = "8.2.2" }
+gradleMavenPublish = { id = "com.vanniktech.maven.publish", version = "0.27.0" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version = "1.9.22" }
 molecule = { id = "app.cash.molecule", version = "1.3.2" }
 nmcp = { id = "com.gradleup.nmcp", version = "0.0.4" }

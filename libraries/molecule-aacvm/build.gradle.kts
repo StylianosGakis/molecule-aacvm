@@ -1,9 +1,9 @@
 plugins {
-  alias(libs.plugins.kotlinMultiplatform)
   alias(libs.plugins.androidLibrary)
+  alias(libs.plugins.gradleMavenPublish)
+  alias(libs.plugins.kotlinMultiplatform)
   alias(libs.plugins.molecule)
   alias(libs.plugins.nmcp)
-  `maven-publish`
 }
 
 version = property("VERSION_NAME") as String
