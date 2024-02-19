@@ -22,7 +22,10 @@ sealed interface DogsEvent {
 sealed interface DogsUiState {
   data object Loading : DogsUiState
   data object Error : DogsUiState
-  data class Success(val dogs: List<Dog>) : DogsUiState
+  data class Success(
+    val dogs: List<Dog>,
+    val isRefreshing: Boolean,
+  ) : DogsUiState
 }
 
 interface DogsRepository {
